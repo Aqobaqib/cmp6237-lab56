@@ -10,5 +10,10 @@ pipeline {
                 sh 'bash web-app.sh'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'bash test-app.sh'
+            }
+        }
     }
 }
